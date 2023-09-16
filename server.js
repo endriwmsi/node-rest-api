@@ -1,17 +1,5 @@
-// import { createServer } from 'node:http'
-
-// const server = createServer((request, response) => {
-//   response.write('oi')
-//   return response.end()
-// })
-
-// server.listen(8080)
-
 import { fastify } from 'fastify'
-// import { DatabaseMemory } from './database-memory.js'
 import { DatabasePostgres } from './database-postgres.js' 
-
-// const database = new DatabaseMemory()
 
 const server = fastify()
 const database = new DatabasePostgres()
